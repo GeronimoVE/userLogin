@@ -42,3 +42,5 @@ module.exports = {
     remove,
     update
 }
+
+postgres://userlogin_db_user:bX29trFf016htlzHS6hSLBjeeWXkZFud@dpg-cg8gce9mbg58571lnjv0-a/userlogin_db

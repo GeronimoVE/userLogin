@@ -17,7 +17,7 @@ const create = catchError(async(req, res) => {
     const result = await User.create({email, password: encripted, firstName, lastName, country, image});
         console.log("result User.Create ", result);
     const code =require('crypto').randomBytes(32).toString("hex");
-    const link = `${frontBaseUrl}/verify_email/${code}`;
+    const link = `${frontBaseUrl}/verify/${code}`;
         console.log("Link", link);
     await sendEmail({
         to: email,
@@ -89,6 +89,8 @@ const login = catchError(async(req, res) => {
 const getLoggedUser = catchError(async(req,res)=>{
     return res.json(req.user);
 })
+
+
 
 module.exports = {
     getAll,

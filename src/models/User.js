@@ -43,5 +43,5 @@ User.prototype.toJSON = function () {
 
 module.exports = User;
 // https://randomuser.me/api/portraits/men/15.jpg
-// https://randomuser.me/api/portraits/men/43.jpg
 // https://randomuser.me/api/portraits/men/21.jpg
+// https://randomuser.me/api/portraits/men/43.jpg

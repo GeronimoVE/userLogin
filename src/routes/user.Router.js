@@ -9,7 +9,7 @@ userRouter.route('/')
 
     .post(create);
 
-userRouter.route('/verify_email/:code') // Queda: users/verify/:code
+userRouter.route('/verify/:code') // Queda: users/verify/:code
     .get(verifyEmail);
 
 userRouter.route('/login')
